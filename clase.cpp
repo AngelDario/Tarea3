@@ -34,7 +34,9 @@ int main()
     return 0;
     */
     int a[4]={1,2,3,8};
-    cout<<"Normal es: "<<a<<endl;
+    cout<<"Normal es: ";
+    for(int i=4-1; i<4; i--)
+        cout<<a[i]<< ",";
     cout<<"Invertido es: "<<invertir(a, sizeof(a)/sizeof(a[0]))<<endl;
     return 0;
 }
