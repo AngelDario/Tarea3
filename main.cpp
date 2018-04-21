@@ -42,7 +42,13 @@ int intercambio(int &x, int &y){
   y=y+x;
   x=y-x;
   y=y-x;
+}
 
+int intercambioBits(int &x, int &y){
+  y=y^x;
+  x=y^x;
+  y=y^x;
+}
 
 int main(){
 
@@ -88,5 +94,9 @@ intercambio(x,y);
 cout<<"x es : "<<x<<endl;
 cout<<"y es : "<<y<<endl;
 */
+int x=3, y=2;
+intercambioBits(x,y);
+cout<<"x es : "<<x<<endl;
+cout<<"y es : "<<y<<endl;
   return 0;
 }
